@@ -62,7 +62,7 @@
         firebase.auth().onAuthStateChanged((user) => {
             if (user) {
                 console.log("User already logged in, redirecting...");
-                window.location.href = "waa.html";
+                window.location.href = "index.html";
             }
         });
 
@@ -82,7 +82,7 @@
 
             firebase.auth().signInWithEmailAndPassword(email, password)
                 .then(() => {
-                    window.location.href = "waa.html";
+                    window.location.href = "index.html";
                 })
                 .catch((error) => {
                     btn.innerText = "دخول للمنظومة";
